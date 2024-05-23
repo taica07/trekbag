@@ -77,10 +77,11 @@ header {
   scrollbar-color: red orange;
   scrollbar-width: thin;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 .item-list::-webkit-scrollbar {
-  width: 0;
+  width: 8px;
 }
 
 .item-list::-webkit-scrollbar-track {
@@ -89,6 +90,11 @@ header {
 
 .item-list::-webkit-scrollbar-thumb {
   background-color: #f3f1ee;
+  border-radius: 4px;
+}
+
+.item-list::-webkit-scrollbar-thumb:hover {
+  background-color: #d3d3d3;
 }
 
 .item {
